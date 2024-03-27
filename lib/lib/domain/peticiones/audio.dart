@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:http/http.dart' as http;
 
 /// The code includes functions to send audio files to a server and retrieve audio files from a server

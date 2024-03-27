@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:widgets/lib/domain/bloc/bloc/bloc/record_bloc_bloc.dart';
 
 class HomeBody extends StatefulWidget {
-  HomeBody({super.key});
+  const HomeBody({super.key});
 
   @override
   State<HomeBody> createState() => _HomeBodyState();
@@ -12,8 +12,8 @@ class HomeBody extends StatefulWidget {
 class _HomeBodyState extends State<HomeBody> {
   @override
   void initState() {
-    recor;
 
+    recor;
     super.initState();
   }
 
@@ -27,16 +27,17 @@ class _HomeBodyState extends State<HomeBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: const Text('Voice Recorder'),
-        ),
-        body: CustomBody());
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text('Voice Recorder'),
+      ),
+      body: const CustomBody(),
+    );
   }
 }
 
 class CustomBody extends StatefulWidget {
-  CustomBody({
+  const CustomBody({
     super.key,
   });
 
